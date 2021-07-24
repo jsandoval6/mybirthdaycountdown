@@ -1,17 +1,18 @@
-let countDownYear;
-if (new Date().getMonth() > 8) {
-    countDownYear = new Date().getFullYear() + 1;
-}
 
-if (new Date().getMonth() == 8 && new Date().getDate() > 28) {
-    countDownYear = new Date().getFullYear() + 1;
-}
-else {
-    countDownYear = new Date().getFullYear();
-}
-let myBirthday = "aug 28 " + countDownYear;
 
 const countdown = () => {
+    let countDownYear;
+    if (new Date().getMonth() > 8) {
+        countDownYear = new Date().getFullYear() + 1;
+    }
+
+    if (new Date().getMonth() == 8 && new Date().getDate() > 28) {
+        countDownYear = new Date().getFullYear() + 1;
+    }
+    else {
+        countDownYear = new Date().getFullYear();
+    }
+    let myBirthday = "aug 28 " + countDownYear;
 
     let birthday = new Date(myBirthday).getTime();
     let now = new Date().getTime();
